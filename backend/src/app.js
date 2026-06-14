@@ -9,4 +9,8 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 
+const chiNhanhRoute = require('./routes/chi_nhanhRoute');
+
+app.use('/api/chi-nhanh', chiNhanhRoute);
+
 module.exports = app;
