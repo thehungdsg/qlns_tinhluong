@@ -11,6 +11,10 @@ app.use(express.json());
 
 const chiNhanhRoute = require('./routes/chi_nhanhRoute');
 
-app.use('/api/chi-nhanh', chiNhanhRoute);
+app.use('/api', chiNhanhRoute);
+
+const taiKhoanRoute = require('./routes/tai_khoanRoute');
+
+app.use('/api', taiKhoanRoute);
 
 module.exports = app;
